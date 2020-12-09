@@ -44,7 +44,7 @@ const Home = ({history}) => {
         headers: {
           'Content-type': 'application/json',
           'Accept': 'application/json',
-          'Access-Control-Allow-Origin': '*'
+          // 'Access-Control-Allow-Origin': '*'
         }
         // crossorigin: true
       })
