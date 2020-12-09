@@ -44,8 +44,8 @@ const Home = ({history}) => {
         headers: {
           'Content-type': 'application/json',
           'Accept': 'application/json'
-        },
-        crossorigin: true
+        }
+        // crossorigin: true
       })
       .then(response => {
           setDocumentosFiltrados(response.data);
