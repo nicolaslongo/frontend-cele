@@ -13,4 +13,4 @@
 ```docker build . -t frontend-cele```
 
 2. Corremos el scrapper
-```docker run -d -t -p 3001:3000 --name frontend-cele frontend-cele```
+```docker run -d -t -p 40000:3000 --name frontend-cele frontend-cele```

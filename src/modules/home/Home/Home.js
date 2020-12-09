@@ -42,7 +42,8 @@ const Home = ({history}) => {
 
       axios.get(url, {
         headers: {
-          'Content-type': 'application/json'
+          'Content-type': 'application/json',
+          'Accept': 'application/json'
         },
         crossorigin: true
       })
