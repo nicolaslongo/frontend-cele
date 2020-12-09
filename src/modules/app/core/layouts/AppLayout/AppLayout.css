@@ -1,0 +1,53 @@
+.app-layout.ant-layout {
+  min-height: 100vh;
+}
+.app-layout .app-sider {
+  padding-top: 20px;
+  box-shadow: 0px 5px 6px #000 14;
+}
+.app-layout .app-sider .ant-layout-sider-trigger {
+  color: #000;
+}
+.app-layout .app-sider .sider-menu-list {
+  box-sizing: border-box;
+  list-style: none;
+  list-style-image: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.app-layout .app-sider .sider-menu-list .sider-menu-item {
+  width: 100%;
+}
+.app-layout .app-sider .sider-menu-list .sider-menu-item a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  height: 50px;
+  text-decoration: none;
+  color: #000;
+}
+.app-layout .app-sider .sider-menu-list .sider-menu-item a .navlink-icon {
+  font-size: 20px;
+  margin: 0px 12px 0px 16px;
+}
+.app-layout .app-sider .sider-menu-list .sider-menu-item a .navlink-title {
+  font-size: 14px;
+  opacity: 1;
+  transition: opacity 0.5s linear;
+}
+.app-layout .app-sider .sider-menu-list .sider-menu-item a .navlink-title[data-collapsed='true'] {
+  visibility: hidden;
+  opacity: 0;
+}
+.app-layout .app-sider .sider-menu-list .sider-menu-item a.selected, .app-layout .app-sider .sider-menu-list .sider-menu-item a:hover {
+  border-right: 2px solid #EE9795;
+}
+.app-layout .app-content-layout .app-content {
+  padding: 20px 30px;
+  background-color: #f3f5f8;
+}
