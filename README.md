@@ -7,3 +7,10 @@
 
 2. Corremos el docker-compose y nos conectamos a través del puerto 3001:  
 ```docker-compose run```
+
+## Opción usando únicamente docker
+1. Build del dockerfile
+```docker build . -t frontend-cele```
+
+2. Corremos el scrapper
+```docker run -d -t -p 3001:3000 --name frontend-cele frontend-cele```

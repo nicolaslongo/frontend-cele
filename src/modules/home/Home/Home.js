@@ -40,7 +40,12 @@ const Home = ({history}) => {
       const url = process.env.REACT_APP_BACKEND_URL + ENDPOINT + 
         '?filter=' + inputText + '&type=' + selectedValue
 
-      axios.get(url)
+      axios.get(url, {
+        headers: {
+          'Content-type': 'application/json'
+        },
+        crossorigin: true
+      })
       .then(response => {
           setDocumentosFiltrados(response.data);
           setSearchWasMade(true);
